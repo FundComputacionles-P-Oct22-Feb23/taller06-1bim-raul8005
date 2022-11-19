@@ -1,0 +1,50 @@
+// Realizar una miniespecificación que permita pedir por teclado
+// empleados
+// Por cada jugador se debe solicitar el nombre, posicio de juego de campo, edad y estatura
+// Presentar un reporte como el siguiente:
+// Listado de Jugadores
+// 1. Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+// 2. Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+// 3. Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+// 4. Ángel Mena -Delantero-, edad 32, estatura 1.75
+// 5. Michael Estrada -Delantero-, edad 27, estatura 1.93
+// Promedio de edades:  26.8
+//  Promedio de estaturas: 1.87
+// El usuario decide cuando ya no se pida más información o datos
+
+1.  .  Inicio
+2.  nombre_jugador, x(80)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+3.  posicion_campo, x(30)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+4.  edad_jugador, i[0-n] <-- x
+5.  estatura, d[0-n] <-- y
+6.  edades+Promedio, d[0-n]
+7.  estatura_Promedio, d[0-n]  
+8.  listaJugadores, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+9.  bandera, l <-- true
+10. opcion, x(1)[{a-z}] <-- x 
+11. Mientras bandera == true entonces
+12.     Escribir "Ingrese el nombre del jugardor"
+13.     Lea nombre
+14.     Escribir "Ingresela posicion del jugador"
+15.     Lea posicion_campo
+16.     Escribir "Ingrese la edad del jugador"
+17.     Lea edad
+18.     Escribir "Ingrese la estatura del jugador"
+19.     lea estatura
+20.     listaJugadores <-- listaJugadores + "\n" + "nombre" + nombre + "-" + "posicion" + posicion_campo+ "-,\tab" + "edad" + edad + ", "+ "estatura" + estatura +
+                                                 + "\n"
+21.     edadesPromedio <-- edad_jugador + edad_jugador
+22.     estaturaPromedio <-- estaturaPromedio + estaturaPromedio                               
+23.     Escribir "Desea terminar el proceso. Digite x para terminar"
+24.     Lea opcion
+25.     Si opcion == "x" entonces
+26.       bandera <-- false
+27.     Fin Si
+28. sumaedad <-- sumaedad + edad
+29. sumaestatura <-- sumaestatura + estatura
+30. contador <-- contador + 1
+31. Fin Mientras 
+32. edad_Promedio <-- sumaedad / 5
+33. estatura_Promedio <-- sumaestatura / 5
+32. Escribir listaJugadores <-- listaJugadores + listaJugadores + "\t" + "Promedio de edades:" + edades_Promedio + "\t" + Promedio de estaturas:" + estatura_Promedio
+3.  Inicio

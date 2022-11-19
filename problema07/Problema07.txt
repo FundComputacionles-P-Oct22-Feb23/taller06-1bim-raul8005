@@ -1,0 +1,18 @@
+// Generar e imprimir la siguiente serie:
+
+// -1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+
+
+1. Inicio
+2. numero, d[0,n]
+3. numero_dos, d[0,n]
+4. resultado, x(300)[{1-9}, {a-z}, {A-Z}, {/}, {BS}]
+5. contador <-- 1
+6. Mientras contador <= 10 entonces
+7.   resultado <-- resultado + numero + "/" + numero_dos
+8.   numero <-- numero * -1
+9.   numero_dos <-- numero_dos + 1
+10.  contador <-- contador + 1
+11. Fin Mientras
+12. Escribe resultado
+13. Fin
